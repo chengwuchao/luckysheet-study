@@ -186,8 +186,6 @@ function setcellvalue(r, c, d, v) {
                 }
                 else{
                     let mask = genarate(cell.v);
-                     console.log('mask---------');
-                     console.log(cell)
                     cell.m = mask[0].toString();
                 }
             }
@@ -203,7 +201,7 @@ function setcellvalue(r, c, d, v) {
 
     if(!server.allowUpdate && !luckysheetConfigsetting.pointEdit){
         if(cell.ct != null && /^(w|W)((0?)|(0\.0+))$/.test(cell.ct.fa) == false && cell.ct.t == "n" && cell.v != null && parseInt(cell.v).toString().length > 4){
-            let autoFormatw = luckysheetConfigsetting.autoFormatw.toString().toUpperCase();
+            let autoFormatw = luckysheetConfigsetting.auatw.toString().toUpperCase();
             let accuracy = luckysheetConfigsetting.accuracy;
 
             let sfmt = setAccuracy(autoFormatw, accuracy);

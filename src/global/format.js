@@ -1417,11 +1417,7 @@ var make_ssf = function make_ssf(SSF) {
     }
 
     function format(fmt, v, o) {
-       // console.log([fmt, v, o]);
-        // 含有 % 时，修改 v 的值
-        if(fmt && fmt.indexOf('%') !== -1 && typeof v === 'number') {
-           v = v / 100
-        }
+     
        
         if (o == null) o = {};
         var sfmt = "";
@@ -1764,8 +1760,6 @@ function fuzzydate(s) {
 }
 
 export function genarate(value) {//万 单位格式增加！！！
-  //  console.log('22222222');
-  //  console.log('value----    ', value);
    
     var ret = [];
     var m = null, ct = {}, v = value;
@@ -1896,7 +1890,6 @@ export function genarate(value) {//万 单位格式增加！！！
             else{
                 ct = { "fa": "0%", "t": "n" };
                 v = numeral(value).value();
-                console.log('22222222');
                 m = SSF.format(ct.fa, v);
             }
         }

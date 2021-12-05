@@ -3533,7 +3533,6 @@ const conditionformat = {
                                 dBig = genarate(str[1].trim())[2];
                                 dSmall = genarate(str[0].trim())[2];
 
-                                console.log();
                             }
                             //循环应用范围计算
                             for(let r = cellrange[s].row[0]; r <= cellrange[s].row[1]; r++){

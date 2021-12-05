@@ -1233,8 +1233,6 @@ const luckysheetformula = {
         });
     },
     updatecell: function (r, c, value, isRefresh = true) {
-        console.log('updatecell---');
-        console.log(value);
         let _this = this;
 
         let $input = $("#luckysheet-rich-text-editor");
